@@ -1,0 +1,22 @@
+include ../card/card.pug
+
+mixin portfolio({addClass})
+    div(class=`portfolio ${addClass}`)
+        .portfolio__container
+            h1.portfolio__head Мои работы
+                .portfolio__photo-conteiner
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata5.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata6.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata7.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata8.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+
+                .portfolio__photo-conteiner
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata5.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata6.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata7.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+                    +card({addClass:"portfolio__card", url:"../img/tata/tata8.jpeg", name:"Tata", when:"21.21.21", whear:"Krasnoyarsk"})
+
+
+
+
+
