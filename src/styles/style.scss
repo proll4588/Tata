@@ -1,0 +1,57 @@
+@import "./fonts.scss";
+@import "./icons.scss";
+
+$dark100: rgba(31, 32, 65, 1);
+$dark75: rgba(31, 32, 65, 0.75);
+$dark50: rgba(31, 32, 65, 0.5);
+$dark25: rgba(31, 32, 65, 0.25);
+$dark5: rgba(31, 32, 65, 0.05);
+
+$max-width-container: 1920px;
+
+$break-point-1: 1000px;
+$break-point-2: 700px;
+$break-point-3: 450px;
+
+@mixin set-font($style, $weight, $size, $line-height, $color) {
+    font-family: Montserrat;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    @include set-font(normal, bold, 24px, 29px, $dark100);
+}
+
+h2 {
+    @include set-font(normal, bold, 19px, 23px, $dark100);
+}
+
+h3 {
+    @include set-font(normal, bold, 12px, 15px, $dark100);
+    text-transform: uppercase;
+}
+
+body {
+    @include set-font(normal, normal, 14px, 24px, $dark75);
+}
+
+a {
+    text-decoration: none;
+    @include set-font(normal, normal, 14px, 17px, $dark50);
+}
+
+@import "../UI/header/header.scss";
+@import "../UI/card/card.scss";
+@import "../UI/about/about.scss";
+@import "../UI/portfolio/portfolio.scss";
+
+@import "../landing.scss";
