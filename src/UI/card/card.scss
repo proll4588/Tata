@@ -1,0 +1,55 @@
+.card {
+    width: 300px;
+    height: 400px;
+
+    &__img {
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &__info {
+        position: absolute;
+
+        width: 300px;
+        height: 400px;
+
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+
+        border-radius: 10px;
+
+        background: rgba($color: black, $alpha: 0.5);
+
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    &__info:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &__info-content {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+
+        color: white;
+    }
+
+    &__name {
+        font-size: 16px;
+    }
+
+    &__when {
+        font-size: 16px;
+    }
+
+    &__whear {
+        font-size: 16px;
+    }
+}
