@@ -1,0 +1,56 @@
+.about {
+    background-color: black;
+    position: relative;
+
+    &__container {
+        padding: 30px 10px;
+        max-width: 1900px;
+        height: 100%;
+
+        margin: 0 auto;
+    }
+
+    &__head {
+        color: white;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+
+        margin-bottom: 100px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 100px;
+        // align-items: center;
+    }
+
+    #back-photo-1 {
+        background-image: url(../img/tata/tata5.jpeg);
+    }
+
+    #back-photo-2 {
+        background-image: url(../img/tata/tata6.jpeg);
+    }
+
+    &__photo {
+        width: 300px;
+        height: 400px;
+
+        background-size: cover;
+        border-radius: 10px;
+
+        flex: 0 0 auto;
+    }
+
+    &__text {
+        width: 400px;
+        color: white;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
