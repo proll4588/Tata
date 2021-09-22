@@ -6,4 +6,5 @@ mixin card({addClass, url, name, when, whear})
                     .card__name #{name}
                     .card__when #{when}
                     .card__whear #{whear}
-            .card__img(style=`background-image: url(${url});`)
+            //- .card__img(style=`background-image: url(${url});`)
+            img.card__img(src=url)

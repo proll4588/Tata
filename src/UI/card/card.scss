@@ -5,7 +5,7 @@
     &__img {
         width: 300px;
         height: 400px;
-        background-size: cover;
+        object-fit: cover;
         border-radius: 10px;
     }
 
@@ -29,6 +29,11 @@
     }
 
     &__info:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &__info:focus {
         opacity: 1;
         cursor: pointer;
     }
