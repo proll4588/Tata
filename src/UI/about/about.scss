@@ -23,7 +23,9 @@
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+        margin: 0 auto;
         margin-bottom: 100px;
+        max-width: 800px;
         // align-items: center;
     }
 
@@ -32,7 +34,7 @@
     }
 
     #back-photo-2 {
-        background-image: url(../img/tata/tata6.jpeg);
+        background-image: url(../img/tata/tata9.jpeg);
     }
 
     &__photo {
@@ -46,11 +48,34 @@
     }
 
     &__text {
-        width: 400px;
+        max-width: 400px;
         color: white;
     }
 
     p {
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+
+            margin-bottom: 20px;
+        }
+
+        &__head {
+            margin-bottom: 40px;
+        }
+
+        #back-photo-1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 }
