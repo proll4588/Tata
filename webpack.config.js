@@ -10,7 +10,7 @@ module.exports = {
     context: path.resolve(__dirname, "src"),
     mode: "development",
     entry: {
-        app: "./index.js",
+        index: "./index.js",
     },
     output: {
         filename: "[name].js",
