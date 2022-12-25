@@ -1,0 +1,13 @@
+include ../card/card.pug
+
+mixin reportage({addClass})
+    div(class=`reportage ${addClass}`)
+        .reportage__contaiter
+            h1.reportage__name Репортаж
+            .reportage__card-stack
+                .reportage__slider.slider
+                    +card({addClass:"slider__item", url:"../img/tata/repo/1.jpg", name:"день знаний СибГУ", when:"12.12.12", whear:"Kras", type:"gor"})
+                    +card({addClass:"slider__item", url:"../img/tata/repo/2.jpg", name:"наши 150", when:"12.12.12", whear:"Kras", type:"gor"})
+                    +card({addClass:"slider__item", url:"../img/tata/repo/3.jpg", name:"студенческая весна", when:"12.12.12", whear:"Kras", type:"gor"})
+                    +card({addClass:"slider__item", url:"../img/tata/repo/4.jpg", name:"ТИМ _Юниор_", when:"12.12.12", whear:"Kras", type:"gor"})
+                    +card({addClass:"slider__item", url:"../img/tata/repo/5.jpg", name:"фестиваль зимнего спорта", when:"12.12.12", whear:"Kras", type:"gor"})

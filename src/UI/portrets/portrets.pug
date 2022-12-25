@@ -1,0 +1,13 @@
+include ../card/card.pug
+
+mixin portrets({addClass})
+    div(class=`portrets ${addClass}`)
+        .portrets__contaiter
+            h1.portrets__name Портреты
+            .portrets__card-stack
+                .portrets__slider.slider
+                    +card({addClass:"slider__item", url:"../img/tata/port/1.jpg", name:"а вы репетитор_ ", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/port/2.jpg", name:"визажист_да", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/port/3.jpg", name:"лучший друг", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/port/4.jpg", name:"миссис ИИТК", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/port/5.jpg", name:"моя профессия - репетитор", when:"12.12.12", whear:"Kras", type:"vert"})

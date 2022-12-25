@@ -1,0 +1,11 @@
+include ../card/card.pug
+
+mixin love({addClass})
+    div(class=`love ${addClass}`)
+        .love__contaiter
+            h1.love__name love-story
+            .love__card-stack
+                .love__slider.slider
+                    +card({addClass:"slider__item", url:"../img/tata/love/1.jpg", name:"Лето, Пикник, Любовь", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/love/2.jpg", name:"Свадьба", when:"12.12.12", whear:"Kras", type:"vert"})
+                    +card({addClass:"slider__item", url:"../img/tata/love/3.jpg", name:"Снимаем любовь", when:"12.12.12", whear:"Kras", type:"vert"})

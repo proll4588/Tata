@@ -49,9 +49,112 @@ a {
     @include set-font(normal, normal, 14px, 17px, $dark50);
 }
 
+.slider {
+    min-width: 0;
+    position: relative;
+
+    &__item {
+        margin: 0 5px;
+    }
+}
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    // margin-right: 100px;
+    // padding-right: 100px;
+    // margin-right: 20px;
+}
+/* Слайд */
+.slick-slide {
+    // margin-right: 20px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+    width: 44px;
+    height: 44px;
+
+    // padding: 10px;
+
+    border: 0;
+    border-radius: 40px;
+
+    background-color: rgba($color: white, $alpha: 0);
+
+    position: absolute;
+
+    filter: invert(78%) sepia(75%) saturate(1%) hue-rotate(6deg)
+        brightness(101%) contrast(87%);
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    top: 45%;
+    left: 0;
+
+    z-index: 1;
+
+    font-size: 0;
+
+    background-image: url(../img/arrow/right-arrow.svg);
+    transform: rotateZ(180deg);
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    top: 45%;
+    right: 0;
+
+    z-index: 1;
+
+    font-size: 0;
+
+    background-image: url(../img/arrow/right-arrow.svg);
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
 @import "../UI/header/header.scss";
 @import "../UI/card/card.scss";
 @import "../UI/about/about.scss";
 @import "../UI/portfolio/portfolio.scss";
+@import "../UI/portrets/portrets.scss";
+@import "../UI/reportage/reportage.scss";
+@import "../UI/love/love.scss";
 
 @import "../landing.scss";

@@ -1,19 +1,41 @@
 .card {
-    width: 300px;
-    height: 400px;
-
-    &__img {
+    &_vert {
         width: 300px;
         height: 400px;
+    }
+
+    &_gor {
+        width: 600px;
+        height: 400px;
+    }
+
+    &__img {
+        &_vert {
+            width: 300px;
+            height: 400px;
+        }
+
+        &_gor {
+            width: 600px;
+            height: 400px;
+        }
+
         object-fit: cover;
         border-radius: 10px;
     }
 
     &__info {
-        position: absolute;
+        &_vert {
+            width: 300px;
+            height: 400px;
+        }
 
-        width: 300px;
-        height: 400px;
+        &_gor {
+            width: 600px;
+            height: 400px;
+        }
+
+        position: absolute;
 
         display: flex;
 
@@ -29,11 +51,6 @@
     }
 
     &__info:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-    &__info:focus {
         opacity: 1;
         cursor: pointer;
     }

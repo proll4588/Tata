@@ -1,10 +1,26 @@
-mixin card({addClass, url, name, when, whear})
+// gor, vert
+mixin card({addClass, url, name, when, whear, type})
     div(class=`card ${addClass}`)
-        .card__img-container   
-            .card__info   
-                .card__info-content  
-                    .card__name #{name}
-                    .card__when #{when}
-                    .card__whear #{whear}
-            //- .card__img(style=`background-image: url(${url});`)
-            img.card__img(src=url)
+        if type == "vert"
+            .card_vert 
+                .card__img-container   
+                    .card__info.card__info_vert
+                        .card__info-content  
+                            .card__name #{name}
+                            .card__when #{when}
+                            .card__whear #{whear}
+                    img.card__img.card__img_vert(src=url)
+
+        else if type == "gor"
+            .card_gor
+                .card__img-container   
+                    .card__info.card__info_gor   
+                        .card__info-content  
+                            .card__name #{name}
+                            .card__when #{when}
+                            .card__whear #{whear}
+                    img.card__img.card__img_gor(src=url)
+
+
+
+        
